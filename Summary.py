@@ -110,7 +110,9 @@ class Lec_5:
 	  	  	  self.child_2 = c2
 	  	  	  self.parent = p
 	  	  	  self.data = d
-	  self.Unbounded_tree = "We use link lists as childs so each node has a reference to parent, left most child and its right sibling. "	  	  
+	  self.Unbounded_tree = "We use link lists as childs so each node has a reference to parent, left most child and its right sibling. "
+	  
+	  	  
 
 
 
