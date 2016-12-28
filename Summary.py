@@ -104,7 +104,14 @@ class Lec_5:
 	  self.Complete_binary_tree = "ith level has 2^i nodes"
 	  self.height_binary_tree = "between n and log(n+1)-1"
 	  self.no_of_leaves = "it is always less than 1 + no of internal nodes proved by induction on this inequality"
+	  class Node:
+	  	  def __init__(self,c1,c2,p,d):
+	  	  	  self.child_1 = c1
+	  	  	  self.child_2 = c2
+	  	  	  self.parent = p
+	  	  	  self.data = d
+	  self.Unbounded_tree = "We use link lists as childs so each node has a reference to parent, left most child and its right sibling. "	  	  
 
-            
+
 
 
