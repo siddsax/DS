@@ -93,7 +93,7 @@ class Lec_5:
         	      Exp_probes_to_find_empty_loation = 1/empty       
                 time_for_one_probe = -(1/alpha)*log(1-alpha)
                 return "Cant Understand Properly"
-class Lec_5:
+class Lec_6:
 	  self.root = "top"
 	  self.node = "nodes which has a child"
 	  self.leaf = "nodes with no children"
@@ -111,8 +111,25 @@ class Lec_5:
 	  	  	  self.parent = p
 	  	  	  self.data = d
 	  self.Unbounded_tree = "We use link lists as childs so each node has a reference to parent, left most child and its right sibling. "
+class Lec_7:
+	  self.tree_walks = "transversing a tree"
+	  def preorder_traversal(node):
+	  	  s_1 = "visit the node"
+	  	  s_2 = "visit the left subtree"
+	  	  s_3 = "visit the right subtree"
+	  def postorder_traveral(node):	  
+	  	  s_1 = "visit the left subtree"
+	  	  s_2 = "visit the right subtree"
+	  	  s_3 = "visit the node"
+	  def inorder_traversal():
+	  def euler_tour_travel():
+	       spl = "each node visited thrice"
+	  ques = "you can make a tree from its inorder and preorder traversal as at each step we can break a tree to its subtree"    	
+	  note = "Practice its code"	  
+
+
 	  
-	  	  
+
 
 
 
