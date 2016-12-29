@@ -35,7 +35,7 @@ class Lec_3:
    	                in itself as well."
 class Lec_4:
     self.Dictionary_defination = "It is a data type which \
-                                  enambles search via key." 
+                                  enables search via key." 
     def binarySearch():
     	k = "Divide and Conquer in sorted array"
     	string m = "start with mid and then return upper\
@@ -126,6 +126,31 @@ class Lec_7:
 	       spl = "each node visited thrice"
 	  ques = "you can make a tree from its inorder and preorder traversal as at each step we can break a tree to its subtree"    	
 	  note = "Practice its code"	  
+class Lec_8:
+	  ordered_dict = "there is a sense of ordering between the keys which is different from hashing."
+	  class Unordered list:
+	  	  search = O(n)  
+	  	  inserting = O(1)
+	  	  successor_function = O(n)
+	  class Ordered_list:
+	      search = O(n)
+	      inserting = O(n)
+	      successor = O(1)
+	      min = O(1)	 
+	      def implemenetation(arrays):
+	          search = O(logn)
+	          inserting = O(n) # due to inserting takes shifting of elements
+	          deleting = O(n)  
+	  class Binary_Search_tree:
+	      self.defination = "whole Left subtree has smaller keys, right has larger key"
+	      height = logN
+	      self.search_time = O(height)
+	      def TreeSuccessor(x):
+	      	  method = "recursion with two cases"
+	      	  case_1 = "right subtree is not null then the leftmost node of right "
+	      	  case_2 = "right subtree is null then in that case the ancestor of it which has that node in its left subtree is the sucessor."
+	      	  time = O(h)
+	      time_insertion = O(h)
 
 
 	  
