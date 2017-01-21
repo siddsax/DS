@@ -73,21 +73,21 @@ long int fibmat(long int n, long int a, long int b,long int c,long int m){
 		matin[0][1] = 1,matin[1][1] = 1,matin[2][1] = c;
     long int** x = alloc_mat(3,3);
 		x = matpow(matrix,n-2,3,m);
-    return x[0][0] + x[0][1] + (c*x[0][2])%m;
+    return (x[0][0] + x[0][1] + (c*x[0][2])%m)%m;
 	}
 }
 int main()
 {
-	long int a,b,c,n,m = 0;
-	scanf("%ld",&n);
-	scanf("%ld",&a);
-	scanf("%ld",&b);
-	scanf("%ld",&c);
-	scanf("%ld",&m);
-	// printf("Recursive call : %ld\n",fibrec(n,a,b,c));
-	// printf("Loop call : %ld\n",fibloop	(n,a,b,c));
-	printf("Matrix call : %ld\n",fibmat	(n,a,b,c,m));
-	long int** mat_1;
-	long int** mat_2;
+	long int a,b,c,n,m,test_cases = 0;
+	scanf("%ld",&test_cases);
+	// const clock_t begin_time = clock();
+	for(int i = 0;i<test_cases;i++){ 
+		scanf("%ld %ld %ld %ld %ld",&a,&b,&c,&n,&m);
+		// printf("Recursive call : %ld\n",fibrec(n,a,b,c,m));
+		// printf("Loop call : %ld\n",fibloop	(n,a,b,c,m));
+		printf("%ld\n",fibmat	(n,a,b,c,m));
+	}
+	// const clock_t begin_time = clock();
+
 	return 0;
 }
