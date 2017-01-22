@@ -97,15 +97,18 @@ int main(int argc, char *argv[])
 	c = atol(argv[3]); // 7
 	m = atol(argv[4]); // 5
 
-	double time[10];
-	for(int i = 1;i<10;i++)
-	{	
+	double time;
+	// for(int i = 1;i<10;i++)
+	// {	
+	  uint64_t q = atol(argv[5]);
     const clock_t begin_time = clock();
-		printf("Matrix call : %ld\n",fibmat	(power(10,2*i),a,b,c,m));
-	  time[i] = ((double)( clock () -  begin_time )) /  CLOCKS_PER_SEC ;
+		// printf("Matrix call : %ld\n",fibmat	(power(10,2*i),a,b,c,m));
+		printf("Matrix call : %ld\n",fibmat	(q,a,b,c,m));
+	  time = ((double)( clock () -  begin_time )) /  CLOCKS_PER_SEC ;
 	  printf("n = ");
-	  printf("%" PRIu64 ,power(10,2*i));
-	  printf(", time = %f \n",time[i]);
-  }
-	return 0;
+	  // printf("%" PRIu64 ,power(10,2*i));
+	  printf("%" PRIu64 ,q);
+	  printf(", time = %f \n",time);
+  // }
+	// return 0;
 }
